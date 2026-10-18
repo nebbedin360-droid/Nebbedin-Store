@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101522">
+  <meta name="description" content="Discover and share apps, games, and software made by Ethiopian developers.">
+  <title>Nebbedin Store — Made here. Shared everywhere.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="topline"><span class="dot"></span> A home for apps and games made by Ethiopian creators</div>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Nebbedin Store home"><span class="brand-mark">N<span>·</span></span><span>Nebbedin <b>Store</b></span></a>
+    <nav><a href="#discover">Discover</a><a href="#how">How it works</a><a href="#publish">For developers</a></nav>
+    <div class="header-actions"><button class="btn btn-quiet" id="loginOpen">Sign in</button><button class="btn btn-primary" id="signupOpen">Create account <span>↗</span></button><button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> BUILT FOR LOCAL CREATORS</div>
+        <h1>Great ideas deserve<br>to be <span>discovered.</span></h1>
+        <p class="hero-sub">The place to find apps, games, and software made by Ethiopian developers. Publish your work, reach real people, and grow your audience.</p>
+        <div class="hero-actions"><a class="btn btn-primary btn-large" href="#discover">Explore the store <span>→</span></a><button class="btn btn-outline btn-large" id="heroPublish">Publish your project</button></div>
+        <div class="hero-proof"><div class="avatar-stack"><span>E</span><span>G</span><span>N</span></div><p><strong>Made by creators.</strong><br>Shared with everyone.</p></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of digital apps">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="float-card card-game"><div class="app-icon icon-purple">✦</div><div><strong>Indie games</strong><small>Play something new</small></div><span class="mini-arrow">↗</span></div>
+        <div class="float-card card-app"><div class="app-icon icon-green">⌘</div><div><strong>Useful apps</strong><small>Made around here</small></div><span class="mini-arrow">↗</span></div>
+        <div class="device"><div class="device-notch"></div><div class="device-screen"><div class="screen-top"><span class="screen-logo">N.</span><span class="screen-dots">•••</span></div><div class="screen-greeting">Find your<br><b>next favorite.</b></div><div class="screen-search">⌕ &nbsp; Search apps...</div><div class="screen-label">FEATURED</div><div class="screen-feature"><div class="feature-art">✳</div><div><b>Made to play</b><small>Indie collection</small></div><span>↗</span></div><div class="screen-label">EXPLORE BY TYPE</div><div class="screen-cats"><span>🎮<small>Games</small></span><span>▣<small>Apps</small></span><span>⌘<small>Tools</small></span></div></div></div>
+        <div class="spark spark-a">✳</div><div class="spark spark-b">✦</div><div class="hero-badge"><span>✦</span> Your next discovery is here</div>
+      </div>
+    </section>
+
+    <section class="stats-row"><div><strong>01</strong><span>One home for local creations</span></div><div><strong>FREE</strong><span>Free for users to explore</span></div><div><strong>OPEN</strong><span>Built for independent makers</span></div><div><strong>ETHIOPIA</strong><span>Local talent, wider reach</span></div></section>
+
+    <section class="discover section" id="discover">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> THE COMMUNITY STORE</div><h2>Find your next <span>favorite.</span></h2><p>Discover new releases, hidden gems, and tools worth keeping.</p></div><div class="heading-note">Every great project<br>starts with a first download <span>↙</span></div></div>
+      <div class="searchbar"><span class="search-symbol">⌕</span><input id="searchInput" type="search" placeholder="Search apps, games, developers..." aria-label="Search projects"><select id="platformFilter" aria-label="Filter by platform"><option value="">All platforms</option><option value="android">Android</option><option value="pc">PC games</option><option value="browser">Browser games</option><option value="other">Other software</option></select><select id="categoryFilter" aria-label="Filter by category"><option value="">All categories</option><option>Games</option><option>Education</option><option>Productivity</option><option>Entertainment</option><option>Tools</option><option>Other</option></select><button class="btn btn-primary" id="searchBtn">Search</button></div>
+      <div class="tab-row"><div class="tabs"><button class="tab active" data-sort="new">Latest releases</button><button class="tab" data-sort="downloads">Popular downloads</button></div><span id="resultCount">Community creations</span></div>
+      <div id="projectGrid" class="project-grid"><div class="empty-state loading"><div class="loader"></div><h3>Loading the store...</h3><p>Finding projects to explore.</p></div></div>
+    </section>
+
+    <section class="publish-section" id="publish"><div class="publish-shape shape-one"></div><div class="publish-shape shape-two"></div><div class="publish-content"><div class="eyebrow light"><span class="eyebrow-line"></span> MADE SOMETHING COOL?</div><h2>Your project deserves<br>a place <span>to shine.</span></h2><p>Stop sending files one DM at a time. Give your app or game a home, share one clean link, and let people discover what you made.</p><div class="publish-points"><span><i>✓</i> Simple developer dashboard</span><span><i>✓</i> Unlimited project submissions</span><span><i>✓</i> Reach users without an app-store listing</span></div><button class="btn btn-light btn-large" id="publishCta">Start publishing <span>→</span></button><small class="fee-note">Developers can submit unlimited projects. Users can browse and download for free.</small></div><div class="publish-visual"><div class="upload-window"><div class="window-bar"><span></span><span></span><span></span><b>developer / new-project</b></div><div class="upload-inner"><div class="upload-check">↑</div><h3>Drop your creation here</h3><p>APK · ZIP · PC game · Software</p><div class="upload-progress"><span></span></div><div class="upload-ready"><span>✓</span> Ready for review <b>100%</b></div></div></div><div class="floating-tag tag-one">Built in Ethiopia <b>✦</b></div><div class="floating-tag tag-two"><span>↗</span> One link. More players.</div></div></section>
+
+    <section class="how section" id="how"><div class="section-heading centered"><div class="eyebrow"><span class="eyebrow-line"></span> SIMPLE BY DESIGN</div><h2>From creation to <span>discovery.</span></h2><p>Less friction for developers. More great things for everyone.</p></div><div class="steps"><article><div class="step-number">01</div><div class="step-icon">◉</div><h3>Create your account</h3><p>Set up your developer profile in a few minutes. No complicated publishing process.</p></article><article><div class="step-number">02</div><div class="step-icon">↑</div><h3>Upload your project</h3><p>Add your file, screenshots, description, and version. You can submit unlimited projects for free.</p></article><article><div class="step-number">03</div><div class="step-icon">✦</div><h3>Get discovered</h3><p>After a safety review, your project can be found, downloaded, and shared with one link.</p></article></div></section>
+
+    <section class="callout"><div class="callout-icon">N<span>·</span></div><div><h3>Built here. Ready for everywhere.</h3><p>Let's make it easier for Ethiopian creators to share what they build.</p></div><button class="btn btn-primary" id="bottomSignup">Join Nebbedin Store <span>→</span></button></section>
+  </main>
+  <footer><a class="brand footer-brand" href="/"><span class="brand-mark">N<span>·</span></span><span>Nebbedin <b>Store</b></span></a><span>© <span id="year"></span> Nebbedin Store</span><div><a href="#how">How it works</a><a href="#publish">Publish</a><a href="#" id="footerLogin">Sign in</a></div></footer>
+
+  <div class="modal-backdrop" id="authModal" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="authTitle"><button class="modal-close" data-close aria-label="Close">×</button><div class="modal-mark">N<span>·</span></div><div class="eyebrow"><span class="eyebrow-line"></span> WELCOME TO THE COMMUNITY</div><h2 id="authTitle">Create your account.</h2><p id="authSub">One account to discover and publish great work.</p><div class="auth-switch"><button class="active" data-mode="register">Create account</button><button data-mode="login">Sign in</button></div><form id="authForm"><label id="usernameWrap">Username<input name="username" placeholder="e.g. nebil_dev" autocomplete="username" required minlength="3" maxlength="24"></label><label>Email address<input name="email" type="email" placeholder="you@example.com" autocomplete="email" required></label><label>Password<input name="password" type="password" placeholder="At least 10 characters" autocomplete="new-password" required minlength="10"></label><div class="form-error" id="authError"></div><button class="btn btn-primary btn-full" type="submit" id="authSubmit">Create account <span>→</span></button></form><small class="fine-print">By joining, you agree to use the store responsibly and only share files you have permission to distribute.</small></section></div>
+
+  <div class="modal-backdrop" id="dashboardModal" hidden><section class="modal modal-wide" role="dialog" aria-modal="true" aria-labelledby="dashboardTitle"><button class="modal-close" data-close aria-label="Close">×</button><div class="dashboard-head"><div><div class="eyebrow"><span class="eyebrow-line"></span> CREATOR SPACE</div><h2 id="dashboardTitle">Your dashboard</h2><p>Manage your projects and publish your next idea.</p></div><button class="btn btn-quiet" id="logoutBtn">Sign out</button></div><div class="dashboard-tabs"><button class="active" data-dash="projects">My projects</button><button data-dash="upload">Upload a project</button><button data-dash="profile">Edit profile</button><button data-dash="admin" id="adminTab" hidden>Moderation</button></div><div id="dashContent"></div></section></div>
+
+  <div class="modal-backdrop" id="projectModal" hidden><section class="modal modal-project" role="dialog" aria-modal="true" aria-labelledby="projectTitle"><button class="modal-close" data-close aria-label="Close">×</button><div id="projectDetail"></div></section></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
